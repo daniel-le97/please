@@ -1,0 +1,16 @@
+
+  {
+    "name": "please",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "npm run setup:server",
+      "setup:app": "npm run setup:server && npm run setup:client",
+      "setup:client": "cd please.client && npm i",
+      "setup:server": "cd please && npm i",
+      "start": "node please/index.js"
+    },
+    "engines": {
+      "node": "^19.4.0"
+    }
+  }
+  
