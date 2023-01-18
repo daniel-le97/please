@@ -1,4 +1,5 @@
 FROM node:16.15.1-alpine AS build-env
+ENV NODE_PATH=/usr/local/lib/node_modules
 ENV NODE_ENV=production
 WORKDIR /app
 COPY ./package*.json ./
